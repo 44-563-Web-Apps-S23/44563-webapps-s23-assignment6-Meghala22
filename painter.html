@@ -2,30 +2,18 @@
 <html>
     <head> 
         <title>Basics of painter</title>
-        
     </head>
- 
-<body>
-
+ <body>
 <h2>Anumolu Meghala Painter entry</h2>
-
 <form>
-    <label for="form_Painter">The hidden painter name </label>
-    <input type ="password" id="form_Painter" name="form_Painter" min=10 max=50 step=2 value=Monet> <br>
-
-    <label for="form_PainterWithSpecialAbility">Guess the painter </label>
-    <input type ="text" id="form_PainterWithSpecialAbility" name="form_PainterWithSpecialAbility" autofocus> <br>
-
-    <input type="button" onclick="checkPainter()" value="Guess the painter”>
-
-
-</from>
-
+    <label for="form_Painter">The hidden painter name</label>
+    <input type="password" id="form_Painter" name="form_Painter" value="Monet"> <br>
+    <label for="form_PainterWithSpecialAbility">Guess the painter</label>
+    <input type="text" id="form_PainterWithSpecialAbility" name="form_PainterWithSpecialAbility" > <br>
+    <input type="button" onclick="checkPainter()" value="check the guess">
+</form>
 <p id="result">This text will be replaced </p>
-
-
 <script> 
-
         var good = 0;
         var oops = 0;
         function checkPainter() {
@@ -37,17 +25,14 @@
 
                 good=good+1;
                 alert("You got it right");
-                out.innerHTML = True;
+                out.innerHTML = "True Answer:" +good +"False Answer:" +oops;
             }
             else {
                 oops=oops+1;
-                /*document.getElementById("result").innerHTML = good; */
                 alert("Sorry")
-                out.innerHTML = False;
+                out.innerHTML = "True Answer:" +good +"False Answer:" +oops;
             }
-
         }
 </script>
-
 </body>
 </html> 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Basics of painter</title>
+        
+    </head>
+ 
+<body>
+
+<h2>Anumolu Meghala Painter entry</h2>
+
+<form>
+    <label for="form_Painter">The hidden painter name </label>
+    <input type ="password" id="form_Painter" name="form_Painter" min=10 max=50 step=2 value=Monet> <br>
+
+    <label for="form_PainterWithSpecialAbility">Guess the painter </label>
+    <input type ="text" id="form_PainterWithSpecialAbility" name="form_PainterWithSpecialAbility" autofocus> <br>
+
+    <input type="button" onclick="checkPainter()" value="Guess the painter”>
+
+
+</from>
+
+<p id="result">This text will be replaced </p>
+
+
+<script> 
+
+        var good = 0;
+        var oops = 0;
+        function checkPainter() {
+            console.log("Getting form values")
+            hiddenpainter = document.getElementById("form_Painter").value;
+            guesspainter = document.getElementById("form_PainterWithSpecialAbility").value;
+            out = document.getElementById("result")
+            if (hiddenpainter == guesspainter) {
+
+                good=good+1;
+                alert("You got it right");
+                out.innerHTML = True;
+            }
+            else {
+                oops=oops+1;
+                /*document.getElementById("result").innerHTML = good; */
+                alert("Sorry")
+                out.innerHTML = False;
+            }
+
+        }
+</script>
+
+</body>
+</html> 

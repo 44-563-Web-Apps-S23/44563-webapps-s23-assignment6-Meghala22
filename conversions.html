@@ -9,13 +9,13 @@
     <h2> shows currency conversions Meghala Anumolu </h2>
 
     <form>
-        <label for="form1_age">What is your age </label>
-        <input type="number" id="form1_age" name="form1_age" min=10 max=50 step=2 value=30> <br>
+        <label for="form1_age">Enter base amount </label>
+        <input type="number" id="base_element" name="form1_age" min=10 max=50 step=2 value=50> <br>
 
         <label for="form1_nick">What is your nickname </label>
-        <input type="text" id="form1_nick" name="form1_nick" autofocus> <br>
+        <input type="number" id="conversion_element" name="form1_nick" autofocus value="35"> <br>
 
-        <input type="button" onclick="resolveForm()" value="Get values from">
+        <input type="button" onclick="convert()" value="Show Conversions">
     </form>
 
     <p id="result">Displays conversion</p>
@@ -50,7 +50,7 @@
                 baseelmnt = base1 * (2 ** i);
 
             }
-            document.getElementById("result").innerHTML = 'Conversions are: ' + toShow;
+            document.getElementById("results").innerHTML = 'Conversions are: ' + toShow;
 
         }
 </script>
@@ -77,8 +77,6 @@
 
 </script>
 
-
- 
 </body>
 
 </html>

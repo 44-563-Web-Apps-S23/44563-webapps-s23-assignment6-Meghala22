@@ -1,6 +1,6 @@
 
 # WebApps-S23-Assignment-6
 Assignment introduction to Java Script and DOM
-[Hosted at](https://44-563-web-apps-s23.github.io/44563-webapps-s23-assignment6-Meghala22/painter.html)
-[Hosted at](https://44-563-web-apps-s23.github.io/44563-webapps-s23-assignment6-Meghala22/conversions.html)
-[Hosted at](https://44-563-web-apps-s23.github.io/44563-webapps-s23-assignment6-Meghala22/candy.html)
+[Hosted at](https://github.com/44-563-Web-Apps-S23/44563-webapps-s23-assignment6-Meghala22.git/painter.html)
+[Hosted at](https://github.com/44-563-Web-Apps-S23/44563-webapps-s23-assignment6-Meghala22.git/conversions.html)
+[Hosted at](https://github.com/44-563-Web-Apps-S23/44563-webapps-s23-assignment6-Meghala22.git/candy.html)

@@ -20,6 +20,7 @@
 <script> 
         var good = 0;
         var oops = 0;
+        var counter = 0;
         function checkPainter() {
             console.log("Getting form values")
             hiddenpainter = document.getElementById("form_Painter").value;
@@ -32,15 +33,19 @@
                 out.innerHTML = "True Answer:" +good +"False Answer:" +oops;
             }
             else {
+                counter = counter +1;
                 oops=oops+1;
                 alert("Sorry")
                 out.innerHTML = "True Answer:" +good +"False Answer:" +oops;
             }
+            if (counter > 10){
+                out.innerHTML = 'Sorry, ran out of guesses'
+
+            }
         }
         var useImage=1;
         function selectImage(){
-  
-     switch(useImage){
+  switch(useImage){
      case 1:
      useImage=2;document.getElementById("img").src="Abelia.jpg";break;
      case 2:
